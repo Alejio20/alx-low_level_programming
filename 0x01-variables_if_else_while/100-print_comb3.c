@@ -28,8 +28,12 @@ int main(void)
 			{
 				putchar(i);
 				putchar(n);
-				putchar(',');
-				putchar(' ');
+				
+				if (i != 56 && n != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 
