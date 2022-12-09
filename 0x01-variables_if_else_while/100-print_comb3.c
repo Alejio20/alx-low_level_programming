@@ -20,6 +20,10 @@ int main(void)
 			{
 				continue;
 			}
+			else if (i-- == n)
+			{
+				continue;
+			}
 			else
 			{
 				putchar(i);
