@@ -10,9 +10,11 @@
 
 int main(void)
 {
-	for (int i = 48; i <= 57; i++)
+	int i, n;
+
+	for (i = 48; i <= 57; i++)
 	{
-		for (int n = 48; n <= 57; n++)
+		for (n = 48; n <= 57; n++)
 		{
 			if (i == n)
 			{
@@ -36,4 +38,6 @@ int main(void)
 			putchar(',');
 		}
 	}
+
+	return (0);
 }
