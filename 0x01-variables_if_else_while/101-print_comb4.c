@@ -21,7 +21,7 @@ int main(void)
 				{
 					continue;
 				}
-				else if (y > x && x > z || x > y && z > x || y > x && z > x || x > y &&  x > z)
+				else if ((y > x && x > z) || (x > y && z > x) || (y > x && z > x) || (x > y &&  x > z))
 				{
 					continue;
 				}
@@ -36,4 +36,6 @@ int main(void)
 			}
 		}
 	}
+
+	return (0);
 }
