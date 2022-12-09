@@ -20,7 +20,7 @@ int main(void)
 			{
 				continue;
 			}
-			else if (i - 1 == n)
+			else if (i > n)
 			{
 				continue;
 			}
