@@ -11,31 +11,25 @@ int main(void)
 {
 	int x, y, z;
 
-	for (x = 48; x <= 57; x++)
+	for (x = 48; x <= 55; x++)
 	{
-		for (y = 48; y <= 57; y++)
+		for (y = 49; y <= 56; y++)
 		{
-			for (z = 48; z <= 57; z++)
+			for (z = 50; z <= 57; z++)
 			{
-				if (x == y && x == z)
+				putchar(x);
+				putchar(y);
+				putchar(z);
+
+				if (x != 55 || y != 56 || z != 57)
 				{
-					continue;
-				}
-				else if ((y > x && x > z) || (x > y && z > x) || (y > x && z > x) || (x > y &&  x > z))
-				{
-					continue;
-				}
-				else
-				{
-					putchar(x);
-					putchar(y);
-					putchar(z);
 					putchar(',');
 					putchar(' ');
 				}
 			}
 		}
 	}
+	putchar('\n');
 
 	return (0);
 }
