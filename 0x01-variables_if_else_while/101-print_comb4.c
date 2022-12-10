@@ -11,9 +11,9 @@ int main(void)
 {
 	int x, y, z;
 
-	for (x = 48; x <= 55; x++)
+	for (x = 48; x <= 57; x++)
 	{
-		for (y = 49; y <= 56; y++)
+		for (y = 49; y <= 57; y++)
 		{
 			for (z = 50; z <= 57; z++)
 			{
