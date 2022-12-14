@@ -13,7 +13,7 @@ void jack_bauer(void)
 	i = 0;
 	while (i < 24)
 	{
-		n = 60;
+		n = 0;
 		while (n < 60)
 		{
 			_putchar((i / 10) + '0');
