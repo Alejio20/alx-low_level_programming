@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <main.h>
 
 /**
@@ -20,15 +19,15 @@ int main(void)
 	g = 'a';
 	h = 'r';
 
-	putcahr(a);
-	putchar(b);
-	putchar(c);
-	putchar(d);
-	putchar(e);
-	putchar(f);
-	putchar(g);
-	putchar(h);
-	putchar('\n');
+	_putcahr(a);
+	_putchar(b);
+	_putchar(c);
+	_putchar(d);
+	_putchar(e);
+	_putchar(f);
+	_putchar(g);
+	_putchar(h);
+	_putchar('\n');
 
 	return (0);
 }
