@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <main.h>
 
 /**
@@ -8,17 +9,6 @@
 
 int main(void)
 {
-	char a, b, c, d, e, f, g, h;
-
-	a = '_';
-	b = 'p';
-	c = 'u';
-	d = 't';
-	e = 'c';
-	f = 'h';
-	g = 'a';
-	h = 'r';
-
 	_putcahr(a);
 	_putchar(b);
 	_putchar(c);
