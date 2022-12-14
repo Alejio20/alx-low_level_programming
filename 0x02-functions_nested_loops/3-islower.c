@@ -2,7 +2,7 @@
 
 /**
  * islower - checks for lowercase character
- * c: integer argument
+ * @c: integer argument
  * Return: 1 (if c is lowercase), 0 otherwise
  */
 
