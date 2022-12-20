@@ -9,9 +9,11 @@
 
 void puts2(char *str)
 {
-	int i;
+	int i, j;
 
 	i = 0;
+
+	j += i;
 	while (str[i] != '\0')
 	{
 		if (i == 0)
@@ -21,7 +23,7 @@ void puts2(char *str)
 		}
 		else
 		{
-			_putchar(str[i + 1]);
+			_putchar(str[j]);
 			i++;
 		}
 	}
