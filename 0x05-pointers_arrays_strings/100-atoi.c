@@ -3,7 +3,7 @@
 /**
  * _atoi - convert a string to an integer
  * @s: char pointer
- * Returns: int of converted string
+ * Return: int of converted string
  */
 
 int _atoi(char *s)
@@ -23,6 +23,10 @@ int _atoi(char *s)
 		else if (s[i] == 45)
 		{
 			sign *= -1;
+		}
+		else if (n > 0)
+		{
+			break;
 		}
 		i++;
 	}
