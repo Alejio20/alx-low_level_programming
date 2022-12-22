@@ -1,1 +1,1 @@
-Directorory for more pointers, arrays and strings 
+Directory for more pointers, arrays and strings 
