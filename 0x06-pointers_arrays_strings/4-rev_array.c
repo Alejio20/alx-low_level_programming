@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * reverses the content of an array of integers
  * @a: int array pointer
