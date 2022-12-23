@@ -23,7 +23,7 @@ char *leet(char *s)
 	{
 		for (j = 0; j < 5; j++)
 		{
-			if (s[i] == x[j] || s[i] == z[j])
+			if (s[i] == x[j] || s[i] == y[j])
 			{
 				s[i] = z[j];
 				break;
