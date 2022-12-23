@@ -7,7 +7,7 @@
  * letter o and O should be replaced by 0
  * letter t and T should be replaced by 7
  * letter l and L should  be replaced by 1
- * @a: string pointer
+ * @s: string pointer
  * Return: encoded string
  */
 
