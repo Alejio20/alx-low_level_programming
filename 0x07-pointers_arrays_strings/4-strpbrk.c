@@ -23,7 +23,6 @@ char *_strpbrk(char *s, char *accept)
 			{
 				k = 1;
 				return (s + i);
-				break;
 			}
 			j++;
 		}
