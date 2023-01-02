@@ -22,6 +22,7 @@ char *_strpbrk(char *s, char *accept)
 			if (s[i] == accept[j])
 			{
 				k = 1;
+				return (s);
 				break;
 			}
 			j++;
@@ -30,7 +31,5 @@ char *_strpbrk(char *s, char *accept)
 			break;
 		i++;
 	}
-	if (k == 1)
-		return (s);
 	return ('\0');
 }
