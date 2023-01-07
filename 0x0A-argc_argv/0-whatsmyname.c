@@ -2,7 +2,7 @@
 
 /**
  * main - prints its name, followed by a new line
- * @argic: argument count
+ * @argc: argument count
  * @argv: string of argument array
  * Return: Always 0 (Success)
  */
