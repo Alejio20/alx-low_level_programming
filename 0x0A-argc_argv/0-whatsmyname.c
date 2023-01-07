@@ -16,7 +16,7 @@ int main(int argc __attribute__((unused)), char *argv[])
 
 void printargv(char *s)
 {
-	while (*s != '\0')
+	if (*s != '\0')
 	{
 		_putchar(*s);
 		printargv(s + 1);
