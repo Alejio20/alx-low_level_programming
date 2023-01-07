@@ -9,19 +9,6 @@
 
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	printargv(argv[0]);
+	printf("%s\n", argv[0]);
 	return (0);
-}
-
-void printargv(char *s)
-{
-	if (*s != '\0')
-	{
-		_putchar(*s);
-		printargv(s + 1);
-	}
-	else
-	{
-		_putchar('\n');
-	}
 }
