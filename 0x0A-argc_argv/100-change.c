@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	if (cent > 0)
+	while (cent > 0)
 	{
 		quarters = cents / 25;
 		cents -= quarters * 25;
