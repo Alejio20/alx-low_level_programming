@@ -21,13 +21,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	//if (cents <= 0)
-	//{
-	//	printf("0\n");
-	//	return (-1);
-	//}
-	if (cents > 0)
+	if (cents <= 0)
 	{
+		printf("0\n");
+		return (-1);
+	}
 	quarters = cents / 25;
 	cents -= quarters * 25;
 	dimes = cents / 10;
@@ -41,5 +39,4 @@ int main(int argc, char *argv[])
 	change = quarters + dimes + nickels + longacres + pennies;
 	printf("%d\n", change);
 	return (0);
-	}
 }
