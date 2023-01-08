@@ -21,20 +21,17 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	while (cent > 0)
-	{
-		quarters = cents / 25;
-		cents -= quarters * 25;
-		dimes = cents / 10;
-		cents -= dimes * 10;
-		nickels = cents / 5;
-		cents -= nickels * 5;
-		longacres = cents / 2;
-		cents -= longacres * 2;
-		pennies = cents / 1;
-		cents -= pennies * 1;
-		change = quarters + dimes + nickels + longacres + pennies;
-		printf("%d\n", change);
-		return (0);
-	}
+	quarters = cents / 25;
+	cents -= quarters * 25;
+	dimes = cents / 10;
+	cents -= dimes * 10;
+	nickels = cents / 5;
+	cents -= nickels * 5;
+	longacres = cents / 2;
+	cents -= longacres * 2;
+	pennies = cents / 1;
+	cents -= pennies * 1;
+	change = quarters + dimes + nickels + longacres + pennies;
+	printf("%d\n", change);
+	return (0);
 }
