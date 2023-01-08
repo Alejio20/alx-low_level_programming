@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 /**
  * main - prints the minimum number of coins to make
@@ -17,7 +16,7 @@ int main(int argc, char *argv[])
 	int cents = atoi(argv[1]);
 	int change, quarters, dimes, nickels, longacres, pennies;
 
-	if ((argc <= 1) || (argc > 2))
+	if ((argc == 1) || (argc > 2))
 	{
 		printf("Error\n");
 		return (1);
