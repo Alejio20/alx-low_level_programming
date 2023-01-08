@@ -21,6 +21,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+	if (cent < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
 	quarters = cents / 25;
 	cents -= quarters * 25;
 	dimes = cents / 10;
