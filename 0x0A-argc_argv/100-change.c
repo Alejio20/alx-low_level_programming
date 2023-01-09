@@ -13,30 +13,30 @@
 
 int main(int argc, char *argv[])
 {
-	int cents = atoi(argv[1]);
-	int change, quarters, dimes, nickels, longacres, pennies;
+	int cents, ncoins = 0;
 
-	if ((argc == 1) || (argc > 2))
+	if (argc == 1 || argc > 2)
 	{
-		printf("Error\n");
-		return (1);
+	printf("Error\n");
+	return (1);
 	}
-	if (cents <= 0)
+
+	cents = atoi(argv[1]);
+
+	while (cents > 0)
 	{
-		printf("0\n");
-		return (-1);
+	if (cents >= 25)
+		cents -= 25;
+	else if (cents >= 10)
+		cents -= 10;
+	else if (cents >= 5)
+		cents -= 5;
+	else if (cents >= 2)
+		cents -= 2;
+	else if (cents >= 1)
+		cents -= 1;
+	ncoins += 1;
 	}
-	quarters = cents / 25;
-	cents -= quarters * 25;
-	dimes = cents / 10;
-	cents -= dimes * 10;
-	nickels = cents / 5;
-	cents -= nickels * 5;
-	longacres = cents / 2;
-	cents -= longacres * 2;
-	pennies = cents / 1;
-	cents -= pennies * 1;
-	change = quarters + dimes + nickels + longacres + pennies;
-	printf("%d\n", change);
+	printf("%d\n", ncoins);
 	return (0);
 }
