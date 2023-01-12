@@ -26,9 +26,7 @@ char *rev_str(char *str)
 int is_palindrome(char *s)
 {
 	char *rev_s = rev_str(s);
-	int i;
 
-	i = 0;
 	if (*s == *rev_s)
 		return (1);
 	else
