@@ -11,7 +11,6 @@ char *rev_str(char *str)
 	char *rev_s;
 	int i;
 
-	rev_s = str;
 	i = 0;
 	if (*str != '\0')
 	{
