@@ -9,8 +9,8 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int binary;
-	int i, j, len, num, sum;
+	unsigned int binary = 0;
+	int i, j;
 
 	if (b == NULL)
 		return (0);
@@ -18,24 +18,22 @@ unsigned int binary_to_uint(const char *b)
 	i = 0;
 
 	while (b[i] != '\0')
+		i++;
+
+	j = 0;
+
+	while (b[j] != '\0')
 	{
-		if (b[i] != 48 && b[i] != 49)
+		if (b[j] != '0' && b[j] != '1')
 			return (0);
 
-		i++;
+		if (b[j] == '1')
+			binary += (1 << (i - 1));
+
+		j++;
+
+		i--;
 	}
-
-	len = _strlen(b);
-	sum = 0;
-
-	for (j = 0; j < len; j++)
-	{
-		num = (_atoi(b[j])) * (_pow_recursion(2, len - 1));
-		len--;
-		sum += num;
-	}
-
-	binary = (unsigned int) sum;
 
 	return (binary);
 }
