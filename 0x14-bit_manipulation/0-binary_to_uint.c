@@ -17,7 +17,7 @@ unsigned int binary_to_uint(const char *b)
 
 	i = 0;
 
-	while (b[i] != NULL)
+	while (b[i] != '\0')
 	{
 		if (b[i] != 48 || b[i] != 49)
 			return (0);
@@ -30,12 +30,12 @@ unsigned int binary_to_uint(const char *b)
 
 	for (j = 0; j < len; j++)
 	{
-		num = _atoi(b[j]) * _pow_recursion(2, len - 1);
+		num = (_atoi(b[j])) * (_pow_recursion(2, len - 1));
 		len--;
 		sum += num;
 	}
 
-	binary = (unsigned int) (sum);
+	binary = (unsigned int) sum;
 
 	return (binary);
 }
