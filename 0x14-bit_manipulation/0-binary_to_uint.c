@@ -35,7 +35,7 @@ unsigned int binary_to_uint(const char *b)
 		sum += num;
 	}
 
-	binary = (unsigned int) sum;
+	binary = (unsigned int) (sum);
 
 	return (binary);
 }
